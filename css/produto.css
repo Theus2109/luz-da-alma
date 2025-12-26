@@ -1,0 +1,152 @@
+/* GERAL */
+body {
+    margin: 0;
+    font-size: 20px;
+    background-color: #e6e4e4;
+
+}
+* {
+    box-sizing: border-box; 
+}
+img {
+    vertical-align: middle;
+}
+.main-content {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.Home-principal {
+    text-decoration: none;
+    color: black;
+}
+
+.produto-container { 
+    display: flex;
+    align-items: flex-start; 
+    gap: 60px; 
+    width: 100%;
+    max-width: 1100px; 
+    padding: 20px 0;
+}
+.img-produto {
+    width: 50%;
+    max-width: 450px; 
+    height: auto;
+    padding: 10px;
+    background-color: #e0e0e0; 
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.info-produto {
+    flex-grow: 1;
+    text-align: left;
+}
+.nome-produto {
+    font-size: 40px; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.star-icon {
+    color: gold; 
+    margin-right: 2px;
+}
+.info-produto h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: normal;
+}
+.preco {
+    font-size: 3.5em; 
+    font-weight: 800;
+    color: #000;
+    margin: 10px 0 40px 0;
+}
+.comprar-btn {
+    background-color: #008000; 
+    color: white;
+    font-size: 1.5em; 
+    font-weight: bold;
+    padding: 15px 80px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.comprar-btn:hover {
+    background-color: #006400; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 868px) {
+
+     
+    /*CABEÇALHO*/
+    .cabecalho { 
+        padding: 15px;
+    }
+    .logo_do_site{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-texto { 
+        font-size: 25px;
+    }
+    .icons {
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    .icon-desktop {
+        display: none !important;
+    }
+
+    
+    .caixa_de_pesquisa {
+        order: 3; 
+        width: 100%;
+        max-width: 95%;
+        margin: 15px auto;
+    }
+    
+    .produto-container {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        gap: 30px;
+    }
+    .img-produto {
+        width: 100%; 
+        max-width: 500px;
+    }
+    .info-produto {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+    .nome-produto {
+        font-size: 2em;
+    }
+    .preco {
+        font-size: 3em;
+    }
+    .comprar-btn {
+        width: 90%;
+        max-width: 300px; 
+        margin: 0 auto;
+    }
+        
+    .redes-sociais, .icones-pagamento {
+        justify-content: center;
+    }
+    
+}

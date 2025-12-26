@@ -1,0 +1,103 @@
+
+/*  RODAPÉ  */
+.rodape {
+    background-color: #556B2F; 
+    color: #fff;
+    width: 100%;
+    margin-top: auto; 
+    padding: 40px 0;
+}
+.rodape-coluna-contato p, .rodape-coluna-sobre-loja p{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.rodape-coluna-contato, .rodape-coluna-pagamento, .rodape-coluna-sobre-loja {
+    flex-basis: 33.333%;
+    padding: 15px;
+}
+
+.rodape-coluna-contato h3,.rodape-coluna-pagamento h3, .rodape-coluna-sobre-loja h3 {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.rodape-coluna-sobre-loja p {
+    text-align: justify;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.icon-social {
+    font-size: 40px;
+}
+
+.icones-pagamento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 40px;
+}
+.icon-pagamento-rodape {
+    border-radius: 4px;
+    font-size: 40px;
+}
+
+/* Para Telas Menores que 868px */
+@media (max-width: 868px) {
+    
+    /*  RODAPÉ  */
+    .rodape {
+        margin-top: 30px;
+        padding: 30px 20px;
+    }
+    .rodape-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    
+    .rodape-coluna-contato, .rodape-coluna-pagamento, .rodape-coluna-sobre-loja {
+        flex-basis: auto;
+        width: 100%; 
+        max-width: 400px;
+        padding: 0;
+    }
+
+    .rodape-coluna-contato h3, .rodape-coluna-pagamento h3, .rodape-coluna-sobre-loja h3 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+
+    .redes-sociais, .icones-pagamento{
+        justify-content: center;
+        font-size: 35px;
+        font-size: 40px;
+    }
+    .icon-social, .icon-pagamento-rodape {
+        font-size: 35px;
+    }
+    .rodape-coluna-contato p, .rodape-coluna-sobre-loja p{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}

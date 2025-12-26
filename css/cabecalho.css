@@ -1,0 +1,212 @@
+/* --- GERAL E RESETS --- */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #e6e4e4;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5; /* Requisito: Espaçamento 1.5 */
+}
+
+.link-padrao {
+    text-decoration: none;
+    color: #000;
+}
+
+/* --- CABEÇALHO --- */
+.cabecalho { 
+    background-color: #f7f5c9;
+    display: flex; 
+    align-items: center;
+    padding: 20px; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.logo_do_site {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-texto { 
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Caixa de Pesquisa */
+.caixa_de_pesquisa {
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    max-width: 400px; 
+    margin: 20px; 
+    height: 40px;
+    flex-grow: 1;
+}
+
+.entrada_de_pesquisa {
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0); 
+    height: 100%; 
+}
+
+.icon_lupa {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #555; 
+    font-size: 16px;
+}
+
+/* Ícones à direita */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+/* --- MENU SANDUÍCHE (DROPDOWN) --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.dropdown-content {
+    display: none; /* Escondido por padrão */
+    position: absolute;
+    background-color: #f7f5c9;
+    min-width: 180px;
+    z-index: 1000;
+    right: 0;
+    top: 100%;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #e0dccc;
+}
+
+.show { 
+    display: block !important; /* Exibido via JS */
+}
+
+/* --- CONTEÚDO PRINCIPAL (CARRINHO) --- */
+.carrinho-Principal-conteiner {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    min-height: 50vh;
+}
+
+.carrinho-layout {
+    display: flex;
+    gap: 30px;
+}
+
+.carrinho-lista {
+    flex-grow: 1;
+    flex-basis: 65%;
+}
+
+.carrinho-resumo {
+    flex-basis: 35%; 
+    background-color: #f7f5c9; 
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Seção de Vídeo */
+.container-video {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* --- RODAPÉ --- */
+.rodape {
+    background-color: #556B2F; 
+    color: #fff;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.rodape-coluna-contato, .rodape-coluna-pagamento, .rodape-coluna-sobre-loja {
+    flex-basis: 33%;
+}
+
+.redes-sociais, .icones-pagamento {
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 868px) {
+    .carrinho-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociais, .icones-pagamento {
+        justify-content: center;
+    }
+
+    .icon-desktop {
+        display: none !important; /* Esconde ícones extras no mobile para usar o sanduíche */
+    }
+}

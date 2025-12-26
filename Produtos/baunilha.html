@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="../css/produto.css">
+        <link rel="stylesheet" href="../css/cabecalho.css">    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Vela Aromática - Alecrim - Luz da Alma</title>
+        <link rel="icon" href="../img/logo.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <a href="../index.html" class="link-padrao">
+                <div class="logo"> 
+                    <img src ="../img/logo.png" class="logo_do_site" alt = "logo">
+                    <span class="logo-texto">Luz da Alma</span>
+                </div>
+            </a>
+            
+            <div class="caixa_de_pesquisa"> 
+                <input type="text" placeholder="pesquisa" class="entrada_de_pesquisa">
+                <i class="fa-solid fa-magnifying-glass icon_lupa"></i> 
+            </div>
+
+            <div class="icons">
+                <a href="../login.html" class="link-padrao icon-desktop">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="../carrinho.html" class="link-padrao icon-desktop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars link-padrao"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#contato">Fale Conosco</a>
+                            <a href="#contato">Sobre nós</a>
+                            <a href="../login.html">Minha conta</a>
+                            <a href="../carrinho.html">Carrinho</a>
+                        </div>
+                </div>
+            </div>
+
+        </header>
+        
+        <div class="main-content"> 
+            
+            <div class="produto-container">
+                <img src="../img/baunilha.png" class="img-produto" alt="Vela artesanal de Baunilha">
+                
+                <div class="info-produto">
+                    <h1 class="nome-produto">Vela aromática - Baunilha</h1>
+                    
+                    <h4>
+                        <i class="fa fa-star star-icon"></i>
+                        <i class="fa fa-star star-icon"></i>
+                        <i class="fa fa-star star-icon"></i>
+                        <i class="fa fa-star star-icon"></i>
+                        <i class="fa fa-star star-icon"></i>
+                        (14 avaliações)
+                    </h4>
+                    
+                    <h2 class="preco" >R$ 24,90</h2>
+                   
+                    <a href="../carrinho/baunilha.html">
+                        <button class="comprar-btn">
+                            Comprar
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div> 
+        
+        <footer class="rodape" id="contato">
+            <div class="rodape-container">
+                <div class="rodape-coluna contato">
+                    <h3>Entre em contato</h3>
+                    <div class="redes-sociais">
+                        <i class="fa-brands fa-instagram icon-social"></i>
+                        <i class="fa-brands fa-facebook icon-social"></i>
+                        <i class="fa-brands fa-x-twitter icon-social"></i>
+                    </div>
+                    <p class="telefone">(xx) xxx xxxxx</p>
+                    <p class="email">E-mail: xxxxx@xxxxx</p>
+                </div>
+
+                <div class="rodape-coluna pagamento">
+                    <h3>Formas de pagamento</h3>
+                    <div class="icones-pagamento">
+                        <i class="fa-brands fa-cc-visa" alt="Visa" id="icon-pagamento"></i>
+                        <i class="fa-brands fa-cc-mastercard" alt="Mastercard" id="icon-pagamento"></i>
+                        <i class="fa-brands fa-cc-amex" alt="American Express" id="icon-pagamento"></i>
+                        <i class="fa-brands fa-cc-paypal" alt="PayPal" id="icon-pagamento"></i>
+                        <i class="fa-brands fa-pix" id="icon-pagamento"></i>
+                    </div>
+                </div>
+
+                <div class="rodape-coluna sobre-loja">
+                    <h3>Sobre a loja</h3>
+                    <p>
+                        A Luz da Alma cria velas artesanais feitas à mão com cera de soja e essências 
+                        botânicas, unindo bem-estar, natureza e sofisticação. Cada vela é pensada para 
+                        transformar ambientes em refúgios de calma e aconchego. Mais do que produtos, 
+                        entregamos experiências sensoriais feitas com propósito, cuidado e alma.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="../js/script.js"></script> 
+    </body>
+</html>

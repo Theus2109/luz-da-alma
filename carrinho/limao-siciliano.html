@@ -1,0 +1,178 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <link rel="stylesheet" href="../css/carrinho.css"> 
+            <link rel="stylesheet" href="../css/cabecalho.css">
+            <link rel="stylesheet" href="../css/rodape.css">
+            <title>Carrinho - Luz da Alma</title>
+            <link rel="icon" href="../img/logo.ico">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+
+        <body>
+           <header class="cabecalho">
+            <a href="../index.html" class="link-padrao">
+                <div class="logo"> 
+                    <img src ="../img/logo.png" class="logo_do_site" alt = "logo">
+                    <span class="logo-texto">Luz da Alma</span>
+                </div>
+            </a>
+            
+            <div class="caixa_de_pesquisa"> 
+                <input type="text" placeholder="pesquisa" class="entrada_de_pesquisa">
+                <i class="fa-solid fa-magnifying-glass icon_lupa"></i> 
+            </div>
+
+            <div class="icons">
+                <a href="../login.html" class="link-padrao icon-desktop">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="../carrinho.html" class="link-padrao icon-desktop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars link-padrao"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#contato">Fale Conosco</a>
+                            <a href="#contato">Sobre nós</a>
+                            <a href="../login.html">Minha conta</a>
+                            <a href="../carrinho.html">Carrinho</a>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+            <main class="carrinho-Principal-conteiner">
+                <h1>Seu Carrinho de Compras</h1>
+
+                <div class="carrinho-layout">
+                    
+                    <div class="carrinho-lista">
+                        <div class="carrinho-cabecalho-tabela">
+                            <span>Produto</span>
+                            <span>Quantidade</span>
+                            <span>Preço Total</span>
+                        </div>
+
+                        <div class="carrinho-item">
+                            <div class="item-info">
+                                <img src="../img/Limao-siciliano.png" alt="Vela de Baunilha" class="item-imagem">
+                                <div class="item-detalhes">
+                                    <h4>Vela aromática - Limão Siciliano</h4>
+                                    <p>R$ 24,90</p>
+                                    <button class="remover-btn"><i class="fa-solid fa-trash-can"></i> Remover</button>
+                                </div>
+                            </div>
+                            
+                            <div class="item-quantidade">
+                                <input type="number" value="1" min="1">
+                            </div>
+                            
+                            <div class="item-preco-total">
+                                R$ 24,90
+                            </div>
+                        </div>
+
+                        
+                        
+                        <a href="../index.html" class="continuar-comprando-btn">
+                            <i class="fa-solid fa-arrow-left"></i> Continuar Comprando
+                        </a>
+                    </div>
+
+                    <div class="carrinho-resumo">
+                        <h2>Resumo do Pedido</h2>
+                        <div class="resumo-linha">
+                            <span>Subtotal:</span>
+                            <span>R$ 24,90</span>
+                        </div>
+                        <div class="resumo-linha">
+                            <span>Frete:</span>
+                            <span class="frete-valor">Calcular</span>
+                        </div>
+                        <div class="resumo-linha total">
+                            <strong>Total:</strong>
+                            <strong>R$ 24,90</strong>
+                        </div>
+
+                        <button class="finalizar-compra-btn">
+                            Finalizar Compra
+                        </button>
+
+                        <div class="cupom-desconto">
+                            <input type="text" placeholder="Código do Cupom">
+                            <button onclick="aplicarCupom()">Aplicar</button>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                    <section class="container-video text-center">
+                        <h3 class="mb-4">Como cuidamos de nossas velas.</h3>
+
+                        <div class="d-flex justify-content-center mb-3">
+                            <svg width="50" height="50">
+                                <circle cx="25" cy="25" r="20" fill="#556B2F" />
+                            </svg>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <h5>Conheça nossa produção artesanal</h5>
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://youtube.com/embed/6B1L6gDFMxk?si=akUyLDwokwZF6JM0"
+                                            title="YouTube video" 
+                                            allowfullscreen 
+                                            style="border-radius: 15px; border: none;">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </main>
+            
+            <footer class = "rodape" id="contato">
+                <div class="rodape-container">
+                    <div class="rodape-coluna-contato">
+                        <h3>Entre em contato</h3>
+                        <div class="redes-sociais">
+                            <i class="fa-brands fa-instagram icon-social"></i>
+                            <i class="fa-brands fa-facebook icon-social"></i>
+                            <i class="fa-brands fa-x-twitter icon-social"></i>
+                        </div>
+                        <p class="telefone">(xx) xxx xxxxx</p>
+                        <p class="email">E-mail: xxxxx@xxxxx</p>
+                    </div>
+
+                    <div class="rodape-coluna-pagamento">
+                        <h3>Formas de pagamento</h3>
+                        <div class="icones-pagamento">
+                            <i class="fa-brands fa-cc-visa" alt="Visa" class="icon-pagamento-rodape"></i>
+                            <i class="fa-brands fa-cc-mastercard" alt="Mastercard" class="icon-pagamento-rodape"></i>
+                            <i class="fa-brands fa-cc-amex" alt="American Express" class="icon-pagamento-rodape"></i>
+                            <i class="fa-brands fa-cc-paypal" alt="PayPal" class="icon-pagamento-rodape"></i>
+                            <i class="fa-brands fa-pix" class="icon-pagamento-rodape"></i>
+                        </div>
+                    </div>
+
+                    <div class="rodape-coluna-sobre-loja">
+                        <h3>Sobre a loja</h3>
+                        <p>
+                            A Luz da Alma cria velas artesanais feitas à mão com cera de soja e essências 
+                            botânicas, unindo bem-estar, natureza e sofisticação. Cada vela é pensada para 
+                            transformar ambientes em refúgios de calma e aconchego. Mais do que produtos, 
+                            entregamos experiências sensoriais feitas com propósito, cuidado e alma.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            
+            <script src="../js/script.js"></script> 
+        </body>
+    </html>

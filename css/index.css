@@ -1,0 +1,244 @@
+/* GERAL */
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #e6e4e4;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+* {
+    box-sizing: border-box; 
+}
+img {
+    vertical-align: middle;
+}
+
+.dropbtn {
+    /* Mantenha os estilos existentes. Se quiser o botão verde, mude o background-color: */
+    /* background-color: #556B2F; */ 
+    background-color: #f7f5c9; /* Mantido como no seu código enviado */
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-sanduiche {
+    position: relative;
+    z-index: 20; 
+}
+
+.menu-content {
+    display: none;
+    position: absolute; 
+    right: 0; 
+    top: 100%; 
+    width: 100%;
+    background-color: #f7f5c9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 0;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Caixa de Pesquisa */
+.caixa_de_pesquisa {
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    max-width: 400px; 
+    margin: 20px; 
+    height: 40px;
+    flex-grow: 1;
+}
+.entrada_de_pesquisa{
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0); 
+    height: 100%; 
+}
+.icon_lupa {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #555; 
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Ícones à direita no cabeçalho */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+/* CARROSSEL */
+.slideshow-container {
+    max-width: 1400px; 
+    position: relative;
+    margin: 30px auto 0 auto; 
+    padding: 10px;
+    border: 2px solid rgba(97, 96, 96, 0.753); 
+}
+
+.imagem_carrossel {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Botões Proximo/Anterior */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 3px;
+    z-index: 10;
+}
+.next {
+    right: 10px;
+}
+.prev {
+    left: 10px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Dots (seta do carrossel) */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* PRODUTOS*/
+.conteudo-principal {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 20px 0; 
+}
+
+.area-produtos {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 50px; 
+    width: 100%; 
+    justify-content: center; 
+    padding:20px;
+}
+
+.produtos{
+    min-width: 250px; 
+    max-width: 350px; 
+    padding: 15px;
+    display: block; 
+    text-decoration: none; 
+    background-color: #5c5b5bab;
+    border-radius: 20px;
+}
+
+.produtos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img_produtos {
+    width: 100% ; 
+    height: auto;
+    border-radius: 15px;
+}
+
+.nome-produto { 
+    text-align: center;
+    color: rgb(231, 231, 231);
+    font-size:25px;
+    padding-top: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* Para Telas Menores que 868px */
+@media (max-width: 868px) {
+
+    /*  CABEÇALHO  */
+    .cabecalho { 
+        padding: 15px;
+    }
+    .logo_do_site{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-texto { 
+        font-size: 25px;
+    }
+    
+    .icons {
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    .icon-desktop {
+        display: none !important;
+    }
+
+
+    .caixa_de_pesquisa {
+        order: 3; 
+        width: 100%;
+        max-width: 95%; 
+        margin: 15px auto; 
+        padding: 0;
+    }
+    
+    .icon_lupa {
+        right: 15px; 
+    }
+    
+    /*  PRODUTOS  */
+    .area-produtos {
+        gap: 35px;
+        padding:10px;
+    }
+    .produtos {
+        width:40%;
+        min-width: 150px;
+        max-width: none;
+    }
+    
+}
