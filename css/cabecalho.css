@@ -8,7 +8,7 @@ body {
     font-size: 16px;
     background-color: #e6e4e4;
     font-family: 'Playfair Display', serif;
-    line-height: 1.5; /* Requisito: Espaçamento 1.5 */
+    line-height: 1.5;
 }
 
 .link-padrao {
@@ -46,6 +46,8 @@ body {
     font-size: 28px;
     font-family: 'Playfair Display', serif;
 }
+
+
 
 /* Caixa de Pesquisa */
 .caixa_de_pesquisa {
@@ -98,7 +100,7 @@ body {
 }
 
 .dropdown-content {
-    display: none; /* Escondido por padrão */
+    display: none;
     position: absolute;
     background-color: #f7f5c9;
     min-width: 180px;
@@ -123,73 +125,11 @@ body {
 }
 
 .show { 
-    display: block !important; /* Exibido via JS */
+    display: block !important;
 }
 
-/* --- CONTEÚDO PRINCIPAL (CARRINHO) --- */
-.carrinho-Principal-conteiner {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    min-height: 50vh;
-}
 
-.carrinho-layout {
-    display: flex;
-    gap: 30px;
-}
-
-.carrinho-lista {
-    flex-grow: 1;
-    flex-basis: 65%;
-}
-
-.carrinho-resumo {
-    flex-basis: 35%; 
-    background-color: #f7f5c9; 
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Seção de Vídeo */
-.container-video {
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-/* --- RODAPÉ --- */
-.rodape {
-    background-color: #556B2F; 
-    color: #fff;
-    width: 100%;
-    padding: 40px 0;
-    margin-top: 50px;
-}
-
-.rodape-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.rodape-coluna-contato, .rodape-coluna-pagamento, .rodape-coluna-sobre-loja {
-    flex-basis: 33%;
-}
-
-.redes-sociais, .icones-pagamento {
-    display: flex;
-    gap: 15px;
-    font-size: 30px;
-    margin: 15px 0;
-}
-
-/* --- RESPONSIVIDADE (MOBILE) --- */
+/* RESPONSIVIDADE */
 @media (max-width: 868px) {
     .carrinho-layout {
         display: grid;
@@ -207,6 +147,40 @@ body {
     }
 
     .icon-desktop {
-        display: none !important; /* Esconde ícones extras no mobile para usar o sanduíche */
+        display: none !important;
+    }
+
+    /*  CABEÇALHO  */
+    .cabecalho { 
+        padding: 15px;
+    }
+    .logo_do_site{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-texto { 
+        font-size: 25px;
+    }
+    
+    .icons {
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    .icon-desktop {
+        display: none !important;
+    }
+
+
+    .caixa_de_pesquisa {
+        order: 3; 
+        width: 100%;
+        max-width: 95%; 
+        margin: 15px auto; 
+        padding: 0;
+    }
+    
+    .icon_lupa {
+        right: 15px; 
     }
 }

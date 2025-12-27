@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column; 
     min-height: 100vh;
+    line-height: 1.5;
 }
 * {
     box-sizing: border-box; 
@@ -15,9 +16,7 @@ img {
 }
 
 .dropbtn {
-    /* Mantenha os estilos existentes. Se quiser o botão verde, mude o background-color: */
-    /* background-color: #556B2F; */ 
-    background-color: #f7f5c9; /* Mantido como no seu código enviado */
+    background-color: #f7f5c9;
     font-size: 25px;
     border: none;
     cursor: pointer;
@@ -49,33 +48,6 @@ img {
 
 .menu-content a:hover {
     background-color: #f1f1f1;
-}
-
-/* Caixa de Pesquisa */
-.caixa_de_pesquisa {
-    display: flex;
-    justify-content: center; 
-    position: relative; 
-    max-width: 400px; 
-    margin: 20px; 
-    height: 40px;
-    flex-grow: 1;
-}
-.entrada_de_pesquisa{
-    width: 100%;
-    padding: 10px 40px 10px 15px; 
-    border-radius: 8px;
-    border: 2px solid rgb(0, 0, 0); 
-    height: 100%; 
-}
-.icon_lupa {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    color: #555; 
-    cursor: pointer;
-    font-size: 16px;
 }
 
 /* Ícones à direita no cabeçalho */

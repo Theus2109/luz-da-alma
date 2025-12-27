@@ -23,6 +23,7 @@ img {
     color: black;
 }
 
+
 .produto-container { 
     display: flex;
     align-items: flex-start; 
@@ -145,6 +146,18 @@ img {
         margin: 0 auto;
     }
         
+    .rodape-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .rodape-coluna {
+        flex-basis: auto;
+        width: 90%; 
+        max-width: 400px;
+        padding: 0;
+    }
     .redes-sociais, .icones-pagamento {
         justify-content: center;
     }
