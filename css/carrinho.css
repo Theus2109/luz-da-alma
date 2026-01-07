@@ -184,9 +184,13 @@ body {
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.2s;
+    transition: all 0.3s ease;
 }
 .finalizar-compra-btn:hover {
     background-color: #6B8E23;
+    transform: translateY(-3px); /* Sobe um pouquinho */
+    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4); /* Brilho roxo */
+    filter: brightness(1.1);
 }
 
 .cupom-desconto {

@@ -15,6 +15,24 @@ img {
     vertical-align: middle;
 }
 
+/* Classe que será aplicada aos slides */
+.mySlides {
+    display: none;
+    animation: fade 0.9s ease-in-out; /* Define a animação e a duração */
+}
+
+/* Definição da animação */
+@keyframes fade {
+    from {
+        opacity: 0.5;
+        transform: scale(1.02); /* Leve zoom para um efeito elegante */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .dropbtn {
     background-color: #f7f5c9;
     font-size: 25px;
