@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /carrinho.html
+Disallow: /checkout.html
+Disallow: /confirmacao.html
+Disallow: /minha-conta.html
+
+Sitemap: https://SEU-USUARIO.github.io/luz-da-alma/sitemap.xml

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minha conta | Luz da Alma</title>
+<meta name="description" content="Pedidos, mensagens e dados da sua conta.">
+<link rel="canonical" href="https://SEU-USUARIO.github.io/luz-da-alma/minha-conta.html">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#2f4a3a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Luz da Alma">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Minha conta | Luz da Alma">
+<meta property="og:description" content="Pedidos, mensagens e dados da sua conta.">
+<meta property="og:url" content="https://SEU-USUARIO.github.io/luz-da-alma/minha-conta.html">
+<meta property="og:image" content="https://SEU-USUARIO.github.io/luz-da-alma/img/hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-root="" data-pagina="conta">
+<main id="principal">
+<div class="contem"><div class="pagina-tit"><h1 id="ola">Minha conta</h1></div>
+<div class="abas" role="tablist" aria-label="Seções da conta">
+<button role="tab" aria-selected="true" aria-controls="p-pedidos" type="button">Pedidos</button>
+<button role="tab" aria-selected="false" aria-controls="p-assin" type="button">Assinaturas</button>
+<button role="tab" aria-selected="false" aria-controls="p-msgs" type="button">Mensagens</button>
+<button role="tab" aria-selected="false" aria-controls="p-ind" type="button">Indique uma amiga</button>
+<button role="tab" aria-selected="false" aria-controls="p-dados" type="button">Meus dados</button></div>
+<div style="max-width:760px;padding-bottom:72px">
+<section id="p-pedidos" role="tabpanel"><div id="lista-pedidos"></div></section>
+<section id="p-assin" role="tabpanel" hidden><div id="lista-assin"></div></section>
+<section id="p-msgs" role="tabpanel" hidden><p class="suave pequeno">E-mails de confirmação e pós-venda (simulados). Em produção eles chegariam na sua caixa de entrada.</p><div id="lista-msgs"></div></section>
+<section id="p-ind" role="tabpanel" hidden><p>Compartilhe o seu código. Quem usar no carrinho ganha 5% de desconto.</p>
+<div class="codigo-box"><code id="cod-ind"></code><button class="btn btn-sec" id="copia-cod" type="button" style="padding:10px 16px">Copiar código</button></div>
+<p style="margin-top:16px">Ou envie o link: <span id="link-ind" class="pequeno" style="word-break:break-all"></span></p><button class="btn btn-sec" id="copia-link" type="button" style="padding:10px 16px">Copiar link</button></section>
+<section id="p-dados" role="tabpanel" hidden><form id="form-dados" novalidate>
+<div class="campo" id="c-d-nome"><label for="d-nome">Nome completo</label><input id="d-nome" type="text" autocomplete="name"><p class="erro-msg" id="e-d-nome" hidden></p></div>
+<div class="campo"><label for="d-email">E-mail</label><input id="d-email" type="email" readonly></div>
+<div class="grade2"><div class="campo"><label for="d-cpf">CPF</label><input id="d-cpf" type="text" readonly></div><div class="campo"><label for="d-tel">Telefone</label><input id="d-tel" type="tel" autocomplete="tel"></div></div>
+<button class="btn" type="submit">Salvar alterações</button></form>
+<p style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn btn-sec" id="sair" type="button">Sair da conta</button><button class="btn btn-sec" id="excluir" type="button">Excluir minha conta e meus dados</button></p>
+<p class="pequeno suave">Você pode excluir seus dados quando quiser (direito previsto na LGPD).</p></section>
+</div></div>
+</main>
+<noscript><p style="padding:20px;text-align:center">Ative o JavaScript para usar o carrinho e a conta.</p></noscript>
+<script src="js/config.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/store.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/conta.js"></script>
+</body>
+</html>
